@@ -1,0 +1,48 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <link rel="stylesheet" href="onglet.css" type="text/css">
+ <script>
+  function go(loc) {
+	if (loc=="main") {
+		document.getElementById('maintab').className="onglet-actif";
+		document.getElementById('diettab').className="onglet";
+	}
+	if (loc=="diet") {
+		document.getElementById('maintab').className="onglet";
+		document.getElementById('diettab').className="onglet-actif";
+	}
+	document.getElementById('mainPage').src = "./"+loc+".html";
+
+  }
+  </script>
+</head>
+
+<body>
+
+
+<TABLE>
+<TR>
+<TD class="degrade" WIDTH=100/><TD WIDTH=1000>
+ <!-- début de la boite contenant les onglets -->
+<h1><center> APPRENDRE A CONNAITRE LE REQUIN</center>
+<div id="logo"><a href="http://www.wwf.fr" target="_blank"> <img src="./logoWWF.png"> </a></div></h1>
+<br/>
+<BR/>
+<BR/>
+ <DIV class="menu1">
+   <a id="maintab" class="onglet-actif" href='javascript:void(0);' onclick='go("main")'>Le requin</a> <!-- onglet ACTIF -->
+   <a id="diettab" class="onglet" href='javascript:void(0);' onclick='go("diet")'>Son alimentation</a> <!-- onglet inactif -->
+</DIV>
+<DIV style="margin-right:4px" >
+
+<IFRAME ID="mainPage" WIDTH=100% HEIGHT=600 SRC="main.html"></IFRAME>
+
+</DIV>
+</TD>
+<TD class="degrade" WIDTH=100/>
+</TR>
+
+</body>
+
+</html>

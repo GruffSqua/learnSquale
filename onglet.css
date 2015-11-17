@@ -1,0 +1,69 @@
+ <style type="text/css">
+@variables color {
+ /* fond: #10CFB5;*/
+  fond: #FFFFFF;
+  texte:#BE4C00}
+  
+  body{
+/* ajout de ce body pour que l'autre soit pris en compte*/
+}
+ body { /* défini le body (la page) */
+   background-color:#FFFFFF; /* le fond de la page est bleue */
+   color:#000000;
+   } /* les textes sont noirs */
+
+   h1{
+   color:#BE4C00
+   }
+H1, H2, H3, H4, H5, H6, H7 { margin:0; padding:0; font-family:'FingerPaintRegular'; font-weight:normal;
+color:#E34619}
+
+h7 {
+   font-weight:20;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+table {
+	text-align:justify;
+	font-size: 18;
+}
+div#logo {
+	float:right;
+	margin-right:20px;
+
+}   
+.menu1 { /* boite qui contient le menu (les onglets) */
+   border-bottom:solid 1px black ; /* crée le trait noir en-dessous des onglets */
+   padding-top:12px ; /* marge intérieure haute */
+   padding-bottom:7px} /* marge intérieure basse */
+
+.degrade {
+   background-image:linear-gradient(#025C8E,#9ED2E5);}   
+   
+.onglet { /* style des onglets inactifs */
+   border:solid 1px black ; /* encadrement */
+   margin:5px 5px 0px 5px ; /* marge extérieure */
+   padding:7px 3px 7px 3px} /* marge intérieure */
+
+a.onglet { /* style des liens se trouvant dans un onglet inactif */
+   background-color:#E7E4E4 ; /* le fond de l'onglet est gris */
+   } /* les liens ne sont pas soulignés */
+
+a.onglet-actif { /* style de l'onglet de la page active */
+    border:solid 2px black ; /* l'encadrement est porté à 2 pixels */
+    border-bottom:solid 3px #10CFB5 ; /* le trait inférieur est effacé */
+    margin:5px 5px 0px 5px ; /* marges intérieures */
+    padding:7px 3px 7px 3px ; /* marges extérieures */  
+   background-color:#9ED2E5;
+   text-decoration:none} /* le fond de l'onglet actif est blanc*/
+
+</style>
